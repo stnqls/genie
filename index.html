@@ -29,7 +29,7 @@
   <!-- reset css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="/main.css">
-  <link rel="stylesheet" href="/mobile.css">
+  <link rel="stylesheet" media="( min-width:0px ) and ( max-width:480px )" href="./mobile.css" />
 
 </head>
 <body>
@@ -47,6 +47,9 @@
         </div>
         <div class="right-menu">
           <ul>
+            <!-- MOBILE -->
+            <li><a href="javascript:void(0)">MY</a></li>
+            <!-- PC -->
             <li><a href="javascript:void(0)">웹플레이어</a></li>
             <li><a href="javascript:void(0)">PC플레이어</a></li>
             <li><a href="javascript:void(0)">지니앱</a></li>
@@ -58,7 +61,18 @@
         <input type="text" class="text" placeholder="여름 내내 챙겨 들을 뽀송뽀송한 재질의 팝">
         <button class="btn--search"></button>
       </div>
-      <nav>
+      <!-- MOBILE -->
+      <nav class="nav-mobile">
+        <ul>
+          <li><a href="javascript:void(0)">HOME</a></li>
+          <li><a href="javascript:void(0)">지니차트</a></li>
+          <li><a href="javascript:void(0)">최신음악</a></li>
+          <li><a href="javascript:void(0)">방송</a></li>
+          <li><a href="javascript:void(0)">추천</a></li>
+        </ul>
+      </nav>
+      <!-- PC -->
+      <nav class="nav-pc">
         <ul>
           <li><a href="javascript:void(0)">지니차트</a></li>
           <li><a href="javascript:void(0)">최신음악</a></li>

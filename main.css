@@ -76,6 +76,10 @@ header .right-menu ul li {
 }
 
 header .right-menu ul li:first-child a {
+  display: none;
+}
+
+header .right-menu ul li:nth-child(2) a {
   color: #0096FF;
   font-weight: 700;
 }
@@ -86,7 +90,8 @@ header .right-menu ul li::before {
   color: #777;
 }
 
-header .right-menu ul li:first-child::before {
+header .right-menu ul li:nth-child(1)::before,
+header .right-menu ul li:nth-child(2)::before {
   content: "";
 }
 
@@ -118,21 +123,26 @@ header .search .btn--search {
   border: 0px;
 }
 
-header nav {}
-
-header nav ul {
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  justify-content: center;
+header .nav-mobile {
+  display: none;
 }
 
-header nav ul li {
+header .nav-pc {}
+
+header .nav-pc ul {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .nav-pc ul li {
   padding: 0 5px;
   box-sizing: border-box;
   margin: 5px;
 }
 
-header nav ul li a:hover {
+header .nav-pc ul li a:hover {
   color: #0096FF;
 }

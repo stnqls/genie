@@ -1,0 +1,47 @@
+header .left-menu ul li:nth-child(2),
+header .left-menu ul li:nth-child(3) {
+  display: none;
+}
+
+header .right-menu ul li:first-child a {
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 3px;
+  box-sizing: border-box;
+}
+
+header .right-menu ul li:first-child::before {
+  content: "";
+}
+
+header .right-menu ul li:nth-child(2),
+header .right-menu ul li:nth-child(3),
+header .right-menu ul li:nth-child(4) {
+  display: none;
+}
+
+header .nav-pc {
+  display: none;
+}
+
+header .nav-mobile {
+  display: block;
+}
+
+header .nav-mobile ul {
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header .nav-mobile ul li {
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+header .nav-mobile ul li a:hover {
+  color: #0096FF;
+}
