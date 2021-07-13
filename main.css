@@ -1,0 +1,138 @@
+body {
+  color: #222;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+}
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-color: pink;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+header .menu {
+  background-color: lightblue;
+  padding: 5px 0 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+header .left-menu {}
+
+header .left-menu ul {
+  display: flex;
+}
+
+header .left-menu ul li {
+  padding: 0 3px;
+  box-sizing: border-box;
+}
+
+header .left-menu ul li::before {
+  content: "|";
+  padding-right: 3px;
+  color: #777;
+}
+
+header .left-menu ul li:first-child {
+  font-weight: 700;
+}
+
+header .left-menu ul li:first-child::before {
+  content: '';
+  display: inline-flex;
+  width: 18px;
+  height: 14px;
+  background: url('./images/hd_5.0.png') no-repeat 0 0;
+}
+
+header .right-menu {}
+
+header .right-menu ul {
+  display: flex;
+}
+
+header .right-menu ul li {
+  padding-right: 3px;
+  box-sizing: border-box;
+}
+
+header .right-menu ul li:first-child a {
+  color: #0096FF;
+  font-weight: 700;
+}
+
+header .right-menu ul li::before {
+  content: "|";
+  padding-right: 3px;
+  color: #777;
+}
+
+header .right-menu ul li:first-child::before {
+  content: "";
+}
+
+header .search {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: center;
+  background-color: lightgreen;
+}
+
+header .search a {}
+
+header .search a img {}
+
+header .search .text {
+  width: 350px;
+  height: 36px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #0096FF;
+  margin-left: 4px;
+}
+
+header .search .btn--search {
+  width: 40px;
+  height: 36px;
+  background: url('./images/hd_5.0.png') no-repeat -45px 5px;
+  border: 0px;
+}
+
+header nav {}
+
+header nav ul {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+}
+
+header nav ul li {
+  padding: 0 5px;
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+header nav ul li a:hover {
+  color: #0096FF;
+}
