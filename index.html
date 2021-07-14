@@ -31,6 +31,7 @@
   <link rel="stylesheet" href="/main.css">
   <link rel="stylesheet" media="( min-width:0px ) and ( max-width:480px )" href="./mobile.css" />
 
+  <script defer src="./main.js"></script>
 </head>
 <body>
 
@@ -74,16 +75,97 @@
       <!-- PC -->
       <nav class="nav-pc">
         <ul>
-          <li><a href="javascript:void(0)">지니차트</a></li>
-          <li><a href="javascript:void(0)">최신음악</a></li>
-          <li><a href="javascript:void(0)">장르음악</a></li>
-          <li><a href="javascript:void(0)">지니TV</a></li>
-          <li><a href="javascript:void(0)">추천</a></li>
-          <li><a href="javascript:void(0)">매거진</a></li>
-          <li><a href="javascript:void(0)">뮤직허그</a></li>
+          <li class="list"><a href="javascript:void(0)">지니차트</a>
+            <ul class="sub_menu">
+              <li><a href="javascript:void(0)">TOP200</a></li>
+              <li><a href="javascript:void(0)">장르별 차트</a></li>
+              <li><a href="javascript:void(0)">시대별 차트</a></li>
+              <li><a href="javascript:void(0)">뮤직비디오 차트</a></li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0)">최신음악</a>
+            <ul class="sub_menu">
+              <li><a href="javascript:void(0)">최신 곡</a></li>
+              <li><a href="javascript:void(0)">최신 앨범</a></li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0)">장르음악</a>
+            <ul class="sub_menu">
+              <li><a href="javascript:void(0)">가요</a></li>
+              <li><a href="javascript:void(0)">POP</a></li>
+              <li><a href="javascript:void(0)">OST</a></li>
+              <li><a href="javascript:void(0)">트롯</a></li>
+              <li><a href="javascript:void(0)">EDM</a></li>
+              <li><a href="javascript:void(0)">JAZZ</a></li>
+              <li><a href="javascript:void(0)">CLASSIC</a></li>
+              <li><a href="javascript:void(0)">JPOP</a></li>
+              <li><a href="javascript:void(0)">CCM</a></li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0)">지니TV</a>
+            <ul class="sub_menu">
+              <li><a href="javascript:void(0)">홈</a></li>
+              <li><a href="javascript:void(0)">Mnet방송</a></li>
+              <li><a href="javascript:void(0)">뮤직비디오</a></li>
+              <li><a href="javascript:void(0)">뮤지션</a></li>
+              <li><a href="javascript:void(0)">이색영상</a></li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0)">추천</a>
+            <ul class="sub_menu">
+              <li><a href="javascript:void(0)">추천</a></li>
+              <li><a href="javascript:void(0)">인기</a></li>
+              <li><a href="javascript:void(0)">태그</a></li>
+              <li><a href="javascript:void(0)">히스토리</a></li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0)">매거진</a>
+            <ul class="sub_menu">
+              <li><a href="javascript:void(0)">클래식공감</a></li>
+              <li><a href="javascript:void(0)">스페셜</a></li>
+              <li><a href="javascript:void(0)">지니뮤직 챌린지</a></li>
+              <li><a href="javascript:void(0)">방송</a></li>
+              <li><a href="javascript:void(0)">뮤직리포트</a></li>
+              <li><a href="javascript:void(0)">이주의 앨범</a></li>
+            </ul>
+          </li>
+          <li class="list"><a href="javascript:void(0)">뮤직허그</a></li>
         </ul>
+      <a class="login" href="javascript:void(0)">로그인/회원가입<button class="down"></button></a>
+        <!-- <a href="javascript:void(0)">로그인/회원가입</a> -->
       </nav>
     </div>
   </header>
+  <section class="new_music">
+    <div class="inner">
+      <div class="top">
+        <ul>
+          <li><a href="javascript:void(0)">최신음악</a></li>
+          <li><button>종합</button></li>
+          <li><button>국내</button></li>
+          <li><button>국외</button></li>
+        </ul>
+      </div>
+      <div class="album">
+        <ul>
+          <li><img src="./images/hot.jpg" alt="HA:TFELT"></li>
+          <li><img src="./images/kangta.jpg" alt="KANGTA"></li>
+          <li><img src="./images/tasteofkorea.jpg" alt="TASTEOFKOREA"></li>
+          <li><img src="./images/최유리.jpg" alt="잘 지내자, 우리"></li>
+          <li><img src="./images/부소정.jpg" alt="PLAYBACK Vol.1"></li>
+          <li><img src="./images/정유빈.jpg" alt="deep deep"></li>
+        </ul>
+        <ul class="second">
+          <li><img src="./images/수안.jpg" alt="똑같은이별인데, 너도 참 아플텐데"></li>
+          <li><img src="./images/달빛정원.jpg" alt="혼잣말"></li>
+          <li><img src="./images/그완.jpg" alt="새벽 네 시"></li>
+          <li><img src="./images/브라운티거.jpg" alt="멘탈붕괴"></li>
+          <li><img src="./images/yooncell.jpg" alt="cherry"></li>
+          <li><img src="./images/lobonabeat.jpg" alt="puffin' tape 1"></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>

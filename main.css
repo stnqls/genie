@@ -1,5 +1,5 @@
 body {
-  color: #222;
+  color: #333;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -15,19 +15,19 @@ img {
 }
 
 .inner {
+  max-width: 940px;
   width: 100%;
   margin: 0 auto;
 }
 
 /* HEADER */
 header {
-  background-color: pink;
-  max-width: 940px;
+
   margin: 0 auto;
+  border-bottom: 1px solid #999;
 }
 
 header .menu {
-  background-color: lightblue;
   padding: 5px 0 5px;
   box-sizing: border-box;
   display: flex;
@@ -100,12 +100,13 @@ header .search {
   align-items: center;
   margin-top: 15px;
   justify-content: center;
-  background-color: lightgreen;
 }
 
-header .search a {}
-
-header .search a img {}
+header .search a img {
+  width: 7.5rem;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
 
 header .search .text {
   width: 350px;
@@ -127,14 +128,18 @@ header .nav-mobile {
   display: none;
 }
 
-header .nav-pc {}
+header .nav-pc {
+  margin-top: 5px;
+  display: flex;
+}
 
 header .nav-pc ul {
   display: flex;
   font-size: 16px;
   font-weight: 700;
-  justify-content: center;
   flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: flex-end;
 }
 
 header .nav-pc ul li {
@@ -145,4 +150,76 @@ header .nav-pc ul li {
 
 header .nav-pc ul li a:hover {
   color: #0096FF;
+}
+
+header .nav-pc .sub_menu {
+  position: absolute;
+  border: 1px solid #0096FF;
+  border-top: 4px solid #0096FF;
+  background-color: #fafafa;
+  display: none;
+}
+
+header .nav-pc .list:hover .sub_menu {
+  display: block;
+}
+
+header .nav-pc .sub_menu li {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+header .nav-pc .login {
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  font-size: 14px;
+}
+
+header .nav-pc .down {
+  width: 10px;
+  height: 10px;
+  background: url('./images/hd_5.0.png') no-repeat -15px -15px;
+  border: 0px;
+  margin-left: 5px;
+}
+
+.new_music {
+  background-color: pink;
+}
+
+.new_music .top {
+  background-color: orange;
+  margin-top: 30px;
+}
+
+.new_music .top ul {
+  display: flex;
+}
+
+.new_music .top ul li:first-child {}
+
+.new_music .top ul li button {
+  padding: 0 8px;
+  border: 0;
+  background-color: transparent;
+  color: #999;
+}
+
+.new_music .album {}
+
+.new_music .album ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.new_music .album ul li {}
+
+.new_music .album ul li img {
+  width: 150px;
+  padding: 5px;
+  box-sizing: border-box;
 }
