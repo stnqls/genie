@@ -131,6 +131,7 @@ header .nav-mobile {
 header .nav-pc {
   margin-top: 5px;
   display: flex;
+  position: relative;
 }
 
 header .nav-pc ul {
@@ -186,6 +187,157 @@ header .nav-pc .down {
   background: url('./images/hd_5.0.png') no-repeat -15px -15px;
   border: 0px;
   margin-left: 5px;
+}
+
+.nav-pc .login-form {
+  position: absolute;
+  width: 300px;
+  height: 340px;
+  border: 1px solid #d2d2d2;
+  top: 43px;
+  right: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.nav-pc .login-form .genie-login {
+  border-bottom: 1px solid #d2d2d2;
+  padding: 20px 19px 6px;
+}
+
+.nav-pc .login-form .genie-login button {
+  display: block;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 8px;
+  border: 1px solid #0096FF;
+  background-color: #0096FF;
+  color: #fff;
+  position: relative;
+}
+
+.nav-pc .login-form .genie-login button span {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-pc .login-form .genie-login button span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 55px;
+  width: 50px;
+  height: 25px;
+  background: url("/images/login_200407.png") no-repeat 0 -50px;
+}
+
+.nav-pc .login-form .genie-login .find {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.nav-pc .login-form .genie-login .find a {
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.nav-pc .login-form .genie-login .find a::after {
+  content: "|";
+  margin-left: 10px;
+}
+
+.nav-pc .login-form .genie-login .find a:last-child {
+  font-weight: 700;
+  color: #444;
+}
+
+.nav-pc .login-form .genie-login .find a:last-child::after {
+  content: "";
+}
+
+.nav-pc .login-form .sns-login {
+  padding: 20px 19px 6px;
+}
+
+.nav-pc .login-form .sns-login ul {
+  display: block;
+}
+
+.nav-pc .login-form .sns-login ul li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border: 1px solid #d2d2d2;
+  padding-left: 50px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.nav-pc .login-form .sns-login ul li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+
+}
+
+.nav-pc .login-form .sns-login ul li:nth-child(1) a::before {
+  content: "";
+  background-image: url('/images/login_200407.png');
+  background-position: 0 0;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+}
+
+.nav-pc .login-form .sns-login ul li:nth-child(2) a::before {
+  content: "";
+  background-image: url('/images/login_200407.png');
+  background-position: -33px 0;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+}
+
+.nav-pc .login-form .sns-login ul li:nth-child(3) a::before {
+  content: "";
+  background-image: url('/images/login_200407.png');
+  background-position: -66px 0;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+}
+
+.nav-pc .login-form .sns-login ul li:nth-child(4) a::before {
+  content: "";
+  background-image: url('/images/login_200407.png');
+  background-position: -133px 0;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 28px;
+  height: 28px;
+}
+
+.nav-pc .login-form .btn-close {
+  font-size: 12px;
+  background: none;
+  border: 0;
+  padding: 5px;
+  position: absolute;
+  bottom: 7px;
+  right: 19px;
 }
 
 .new_music {}
