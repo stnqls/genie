@@ -188,12 +188,9 @@ header .nav-pc .down {
   margin-left: 5px;
 }
 
-.new_music {
-  background-color: pink;
-}
+.new_music {}
 
 .new_music .top {
-  background-color: lightseagreen;
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -202,15 +199,21 @@ header .nav-pc .down {
   display: flex;
 }
 
-.new_music .top ul:first-child {
+.new_music .top ul>a {
   font-size: 1.2rem;
+  font-weight: 700;
+  color: #666;
+  margin-right: 10px;
 }
 
 .new_music .top ul li button {
+  height: 100%;
   padding: 0 8px;
   border: 0;
   background-color: transparent;
   color: #666;
+  display: flex;
+  align-items: flex-end;
 }
 
 .new_music .album {}
@@ -224,6 +227,15 @@ header .nav-pc .down {
 
 .new_music .album ul li {
   position: relative;
+}
+
+.new_music .album ul li:hover .album-info {
+  opacity: 100;
+  transition: all .5s;
+}
+
+.new_music .album ul li:hover .title {
+  display: none;
 }
 
 .new_music .album ul li::before {
@@ -248,15 +260,15 @@ header .nav-pc .down {
   height: 25%;
   bottom: 0;
   right: 0;
-  color: white;
   display: flex;
   justify-content: center;
-  padding: 2px;
   box-sizing: border-box;
+  padding: 5px;
 }
 
 .new_music .album ul li .title span {
   font-size: 13px;
+  color: white;
 }
 
 .new_music .album .album-info {
@@ -266,23 +278,61 @@ header .nav-pc .down {
   top: 0;
   background-color: rgba(0, 0, 0, .75);
   color: #fff;
+  opacity: 0;
 }
 
 .new_music .album .album-info .singer {
   display: flex;
   justify-content: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 .new_music .album .album-info .song {
+  width: 100%;
+  font-size: 14px;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
 }
 
-.new_music .album .album-info .btn-song {}
+.new_music .album .album-info .btn-song {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  bottom: 15px;
+  display: flex;
+  justify-content: center;
 
-.new_music .album .album-info .btn-song .play {}
+}
 
-.new_music .album .album-info .btn-song .plus {}
+.new_music .album .album-info .btn-song .play {
+  background-image: url("./images/list_180122.png");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  border: 0;
+  text-indent: -9999px;
+  background-position: 0px -21px;
+}
+
+.new_music .album .album-info .btn-song .plus {
+  background-image: url("./images/list_180122.png");
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  border: 0;
+  line-height: 0;
+  background-position: -30px -21px;
+}
 
 .promotion {
   display: flex;
