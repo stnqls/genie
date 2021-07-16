@@ -140,6 +140,7 @@ header .nav-pc ul {
   flex-wrap: wrap;
   flex-grow: 2;
   justify-content: flex-end;
+  margin-bottom: 10px;
 }
 
 header .nav-pc ul li {
@@ -162,6 +163,7 @@ header .nav-pc .sub_menu {
 
 header .nav-pc .list:hover .sub_menu {
   display: block;
+  z-index: 10;
 }
 
 header .nav-pc .sub_menu li {
@@ -191,21 +193,24 @@ header .nav-pc .down {
 }
 
 .new_music .top {
-  background-color: orange;
+  background-color: lightseagreen;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .new_music .top ul {
   display: flex;
 }
 
-.new_music .top ul li:first-child {}
+.new_music .top ul:first-child {
+  font-size: 1.2rem;
+}
 
 .new_music .top ul li button {
   padding: 0 8px;
   border: 0;
   background-color: transparent;
-  color: #999;
+  color: #666;
 }
 
 .new_music .album {}
@@ -214,12 +219,84 @@ header .nav-pc .down {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 5px 0;
 }
 
-.new_music .album ul li {}
+.new_music .album ul li {
+  position: relative;
+}
+
+.new_music .album ul li::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-image: url('./images/mask_recent.png');
+  background-repeat: no-repeat;
+}
 
 .new_music .album ul li img {
   width: 150px;
-  padding: 5px;
+}
+
+.new_music .album ul li .title {
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  bottom: 0;
+  right: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2px;
   box-sizing: border-box;
+}
+
+.new_music .album ul li .title span {
+  font-size: 13px;
+}
+
+.new_music .album .album-info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, .75);
+  color: #fff;
+}
+
+.new_music .album .album-info .singer {
+  display: flex;
+  justify-content: center;
+}
+
+.new_music .album .album-info .song {
+  display: flex;
+  justify-content: center;
+}
+
+.new_music .album .album-info .btn-song {}
+
+.new_music .album .album-info .btn-song .play {}
+
+.new_music .album .album-info .btn-song .plus {}
+
+.promotion {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 104px;
+  margin-top: 23px;
+  background-color: #e8eef3;
+}
+
+.promotion .left {
+  display: flex;
+}
+
+.promotion .right {
+  display: flex;
 }
