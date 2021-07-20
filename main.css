@@ -20,6 +20,46 @@ img {
   margin: 0 auto;
 }
 
+.btn-song {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-song .play {
+  background-image: url("./images/list_180122.png");
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  border: 0;
+  text-indent: -9999px;
+}
+
+.btn-song .plus {
+  background-image: url("./images/list_180122.png");
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  border: 0;
+}
+
+.btn-song .add {
+  background-image: url("./images/list_180122.png");
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+  border: 0;
+}
+
 /* HEADER */
 header {
 
@@ -129,32 +169,36 @@ header .nav-mobile {
 }
 
 header .nav-pc {
-  margin-top: 5px;
+  margin: 10px 0 10px;
   display: flex;
   position: relative;
 }
 
-header .nav-pc ul {
+header .nav-pc .navbar {
+  display: flex;
+  flex-grow: 2;
+  justify-content: flex-end;
+}
+
+header .nav-pc .navbar ul {
   display: flex;
   font-size: 16px;
   font-weight: 700;
   flex-wrap: wrap;
-  flex-grow: 2;
-  justify-content: flex-end;
-  margin-bottom: 10px;
+  justify-content: center;
 }
 
-header .nav-pc ul li {
+header .nav-pc .navbar ul li {
   padding: 0 5px;
   box-sizing: border-box;
   margin: 5px;
 }
 
-header .nav-pc ul li a:hover {
+header .nav-pc .navbar ul li a:hover {
   color: #0096FF;
 }
 
-header .nav-pc .sub_menu {
+header .nav-pc .navbar .sub_menu {
   position: absolute;
   border: 1px solid #0096FF;
   border-top: 4px solid #0096FF;
@@ -162,26 +206,34 @@ header .nav-pc .sub_menu {
   display: none;
 }
 
-header .nav-pc .list:hover .sub_menu {
+header .nav-pc .navbar .list:hover .sub_menu {
   display: block;
   z-index: 10;
 }
 
-header .nav-pc .sub_menu li {
+header .nav-pc .navbar .sub_menu li {
   font-weight: 500;
   font-size: 14px;
 }
 
-header .nav-pc .login {
-  width: auto;
+header .nav-pc .nav-login {
   display: flex;
   align-items: center;
   flex-grow: 1;
   justify-content: flex-end;
+}
+
+header .nav-pc .nav-login .login {
+  width: auto;
   font-size: 14px;
 }
 
-header .nav-pc .down {
+header .nav-pc .nav-login button {
+  border: none;
+  background: none;
+}
+
+header .nav-pc .nav-login .login::after {
   width: 10px;
   height: 10px;
   background: url('./images/hd_5.0.png') no-repeat -15px -15px;
@@ -189,7 +241,7 @@ header .nav-pc .down {
   margin-left: 5px;
 }
 
-.nav-pc .login-form {
+.nav-pc .nav-login .login-form {
   position: absolute;
   width: 300px;
   height: 340px;
@@ -198,14 +250,19 @@ header .nav-pc .down {
   right: 0;
   z-index: 1;
   background-color: #fff;
+  display: none;
 }
 
-.nav-pc .login-form .genie-login {
+.nav-pc .nav-login .login-form.active {
+  display: block;
+}
+
+.nav-pc .nav-login .login-form .genie-login {
   border-bottom: 1px solid #d2d2d2;
   padding: 20px 19px 6px;
 }
 
-.nav-pc .login-form .genie-login button {
+.nav-pc .nav-login .login-form .genie-login button {
   display: block;
   height: 45px;
   width: 100%;
@@ -216,12 +273,12 @@ header .nav-pc .down {
   position: relative;
 }
 
-.nav-pc .login-form .genie-login button span {
+.nav-pc .nav-login .login-form .genie-login button span {
   display: flex;
   justify-content: center;
 }
 
-.nav-pc .login-form .genie-login button span::before {
+.nav-pc .nav-login .login-form .genie-login button span::before {
   content: '';
   display: block;
   position: absolute;
@@ -232,7 +289,7 @@ header .nav-pc .down {
   background: url("/images/login_200407.png") no-repeat 0 -50px;
 }
 
-.nav-pc .login-form .genie-login .find {
+.nav-pc .nav-login .login-form .genie-login .find {
   display: flex;
   font-size: 12px;
   justify-content: space-between;
@@ -340,6 +397,8 @@ header .nav-pc .down {
   right: 19px;
 }
 
+/* 최신음악 */
+
 .new_music {}
 
 .new_music .top {
@@ -375,6 +434,7 @@ header .nav-pc .down {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 5px 0;
+
 }
 
 .new_music .album ul li {
@@ -452,40 +512,21 @@ header .nav-pc .down {
   text-align: center;
 }
 
-.new_music .album .album-info .btn-song {
-  position: absolute;
-  width: 100%;
-  height: 25px;
+.new_music .btn-song {
   bottom: 15px;
-  display: flex;
-  justify-content: center;
-
 }
 
-.new_music .album .album-info .btn-song .play {
-  background-image: url("./images/list_180122.png");
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin: 0 10px;
-  border: 0;
-  text-indent: -9999px;
+.new_music .btn-song .play {
   background-position: 0px -21px;
+
 }
 
-.new_music .album .album-info .btn-song .plus {
-  background-image: url("./images/list_180122.png");
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
-  width: 25px;
-  height: 25px;
-  margin: 0 10px;
-  border: 0;
-  line-height: 0;
+.new_music .btn-song .plus {
   background-position: -30px -21px;
+
 }
 
+/* PROMOTION */
 .promotion {
   display: flex;
   justify-content: center;
@@ -499,6 +540,99 @@ header .nav-pc .down {
   display: flex;
 }
 
+.promotion .left img {
+  width: 100%;
+}
+
 .promotion .right {
   display: flex;
+}
+
+
+/* 실시간 차트 */
+.realchart {
+  height: 600px;
+  margin-top: 20px;
+}
+
+.realchart h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.realchart ul {
+  margin-top: 10px;
+}
+
+.realchart ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eef1f4;
+  position: relative;
+}
+
+.realchart ul li:first-child {
+  border-top: 1px solid;
+}
+
+.realchart ul li .lank {
+  width: 50px;
+  text-align: center;
+  font-weight: 700;
+  color: #444;
+}
+
+.realchart ul li .state {
+  width: 10px;
+  height: 5px;
+  background-image: url('/images/list_180122.png');
+  background-repeat: no-repeat;
+  background-position: -164px -111px;
+  margin-right: 20px;
+}
+
+.realchart ul li .title {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  flex-grow: 2;
+}
+
+.realchart ul li:hover .title::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+.realchart ul li:hover:first-child .title::before {
+  content: "";
+  background: url('/images/msg워너비.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li .name {
+  color: #8b8b8b;
+  display: flex;
+  width: 100px;
+  flex-grow: 1;
+}
+
+.realchart .btn-song {
+  width: auto;
+  flex-grow: 1;
+  right: 20px;
+}
+
+.realchart .btn-song .play {
+  background-position: 0 -21px;
+}
+
+.realchart .btn-song .plus {
+  background-position: -30px -21px;
+}
+
+.realchart .btn-song .add {
+  background-position: -150px -21px;
 }

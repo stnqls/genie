@@ -50,6 +50,18 @@ header .nav-mobile ul li a:hover {
   color: #0096FF;
 }
 
+/* 최신음악 */
+.new_music .album ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .new_music .album .second {
+  display: none;
+}
+
+/* PROMOTION */
+
+.promotion .right {
   display: none;
 }
