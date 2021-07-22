@@ -696,3 +696,36 @@ header .nav-pc .nav-login .login::after {
 .realchart .btn-song .add {
   background-position: -150px -21px;
 }
+
+.realchart ul li:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.realchart ul li .total {
+  display: flex;
+}
+
+.realchart ul li .total a {
+  display: block;
+  width: 70px;
+  height: 20px;
+  border: 1px solid;
+  border: 1px solid #a6afb6;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.realchart ul li .btns:nth-child(1)::before {
+  content: "";
+  width: 20px;
+  background: url('./images/list_180122.png') no-repeat;
+  background-position: 0 0;
+}
+
+.realchart ul li:last-child a {
+  font-size: 14px;
+}
