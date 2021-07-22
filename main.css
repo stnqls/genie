@@ -550,6 +550,8 @@ header .nav-pc .nav-login .login::after {
 
 
 /* 실시간 차트 */
+
+
 .realchart {
   height: 600px;
   margin-top: 20px;
@@ -574,6 +576,10 @@ header .nav-pc .nav-login .login::after {
 
 .realchart ul li:first-child {
   border-top: 1px solid;
+}
+
+.realchart ul li:last-child {
+  background-color: #f0f7fc;
 }
 
 .realchart ul li .lank {
@@ -609,6 +615,60 @@ header .nav-pc .nav-login .login::after {
 .realchart ul li:hover:first-child .title::before {
   content: "";
   background: url('/images/msg워너비.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(2) .title::before {
+  content: "";
+  background: url('/images/신호등.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(3) .title::before {
+  content: "";
+  background: url('/images/버터.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(4) .title::before {
+  content: "";
+  background: url('/images/weekend.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(5) .title::before {
+  content: "";
+  background: url('/images/nextlevel.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(6) .title::before {
+  content: "";
+  background: url('/images/버터2.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(7) .title::before {
+  content: "";
+  background: url('/images/좋아좋아.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(8) .title::before {
+  content: "";
+  background: url('/images/치맛바람.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(9) .title::before {
+  content: "";
+  background: url('/images/비와당신.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:hover:nth-child(10) .title::before {
+  content: "";
+  background: url('/images/헤픈우연.jpg') no-repeat;
   background-size: contain;
 }
 
