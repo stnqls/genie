@@ -56,6 +56,14 @@ header .nav-mobile ul li a:hover {
   flex-wrap: wrap;
 }
 
+.new_music .album ul li {
+  position: relative;
+}
+
+.new_music .album .first li {
+  margin-bottom: 5px;
+}
+
 .new_music .album .second {
   display: none;
 }
@@ -67,3 +75,188 @@ header .nav-mobile ul li a:hover {
 }
 
 /* 실시간 차트 */
+.realchart {
+  height: 600px;
+  margin-top: 20px;
+}
+
+.realchart h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.realchart ul {
+  margin-top: 10px;
+}
+
+.realchart ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eef1f4;
+  position: relative;
+}
+
+.realchart .name {
+  display: block;
+  font-size: 12px;
+  width: 200px;
+}
+
+.realchart ul li:first-child {
+  border-top: 1px solid;
+}
+
+.realchart ul li:last-child {
+  background-color: #f0f7fc;
+}
+
+.realchart ul li .lank {
+  width: 50px;
+  text-align: center;
+  font-weight: 700;
+  color: #444;
+}
+
+.realchart ul li .state {
+  width: 10px;
+  height: 5px;
+  background-image: url('/images/list_180122.png');
+  background-repeat: no-repeat;
+  background-position: -164px -111px;
+  margin-right: 20px;
+}
+
+.realchart ul li .title {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  flex-grow: 2;
+}
+
+.realchart ul li .title::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+.realchart ul li:nth-child(1) .title::before {
+  content: "";
+  background: url('/images/msg워너비.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(2) .title::before {
+  content: "";
+  background: url('/images/신호등.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(3) .title::before {
+  content: "";
+  background: url('/images/버터.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(4) .title::before {
+  content: "";
+  background: url('/images/weekend.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(5) .title::before {
+  content: "";
+  background: url('/images/nextlevel.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(6) .title::before {
+  content: "";
+  background: url('/images/버터2.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(7) .title::before {
+  content: "";
+  background: url('/images/좋아좋아.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(8) .title::before {
+  content: "";
+  background: url('/images/치맛바람.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(9) .title::before {
+  content: "";
+  background: url('/images/비와당신.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li:nth-child(10) .title::before {
+  content: "";
+  background: url('/images/헤픈우연.jpg') no-repeat;
+  background-size: contain;
+}
+
+.realchart ul li .name {
+  color: #8b8b8b;
+  display: flex;
+  width: 100px;
+  display: none;
+}
+
+.realchart .btn-song {
+  width: auto;
+  flex-grow: 1;
+  right: 20px;
+}
+
+.realchart .btn-song .play {
+  background-position: 0 -21px;
+}
+
+.realchart .btn-song .plus {
+  background-position: -30px -21px;
+  display: none;
+}
+
+.realchart .btn-song .add {
+  background-position: -150px -21px;
+  display: none;
+}
+
+.realchart ul li:last-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.realchart ul li .total {
+  display: flex;
+}
+
+.realchart ul li .total a {
+  display: block;
+  width: 70px;
+  height: 20px;
+  border: 1px solid;
+  border: 1px solid #a6afb6;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.realchart ul li .btns:nth-child(1)::before {
+  content: "";
+  width: 20px;
+  background: url('./images/list_180122.png') no-repeat;
+  background-position: 0 0;
+}
+
+.realchart ul li:last-child a {
+  font-size: 14px;
+}

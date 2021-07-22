@@ -1,8 +1,5 @@
 const logbtn = document.querySelector('#login');
-const logform = document.querySelector('#login-form');
-
-console.log(logbtn);
-console.log(logform);
+let logform = document.querySelector('#login-form');
 
 logbtn.addEventListener('click',() => {
   logform.classList.toggle('active');
