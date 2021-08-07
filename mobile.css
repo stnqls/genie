@@ -53,7 +53,6 @@ header .nav-mobile ul li a:hover {
 /* 최신음악 */
 .new_music .album ul {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .new_music .album ul li {
@@ -76,8 +75,8 @@ header .nav-mobile ul li a:hover {
 
 /* 실시간 차트 */
 .realchart {
-  height: 600px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .realchart h2 {
@@ -259,4 +258,49 @@ header .nav-mobile ul li a:hover {
 
 .realchart ul li:last-child a {
   font-size: 14px;
+}
+
+/* 에디터 추천 */
+
+.editor .square.hid {
+  display: none;
+}
+
+.editor ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.editor ul li {
+  margin-right: 0px;
+}
+
+/* FOOTER */
+footer .link ul li a {
+  font-size: 10px;
+}
+
+footer .link ul li.hid {
+  display: none;
+}
+
+footer .info .first {
+  display: block;
+  font-size: 12px;
+}
+
+footer .info .second {
+  display: block;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+footer .info ul li {
+  line-height: 1.7;
+}
+
+footer .info ul li::after {
+  content: '0';
+  margin-left: 0px;
 }
